@@ -1,0 +1,14 @@
+E:\Education\compGraph\Lesson2.2\Lesson2.2\bin\Debug\Lesson2._2.exe.config
+E:\Education\compGraph\Lesson2.2\Lesson2.2\bin\Debug\Lesson2._2.exe
+E:\Education\compGraph\Lesson2.2\Lesson2.2\bin\Debug\Lesson2._2.pdb
+E:\Education\compGraph\Lesson2.2\Lesson2.2\bin\Debug\OpenTK.Compatibility.dll
+E:\Education\compGraph\Lesson2.2\Lesson2.2\bin\Debug\OpenTK.dll
+E:\Education\compGraph\Lesson2.2\Lesson2.2\bin\Debug\OpenTK.GLControl.dll
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.AssemblyReference.cache
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.SuggestedBindingRedirects.cache
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.Properties.Resources.resources
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.GenerateResource.cache
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.CoreCompileInputs.cache
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.CopyComplete
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.exe
+E:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.pdb
