@@ -7,31 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0146f9b9-23b0-4f3e-b464-b8ee3c874264" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/.idea/.idea.Lesson1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneDrive_1_22.10.2023/Задание 3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OneDrive_1_22.10.2023/Задание 3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneDrive_1_22.10.2023/Задание 6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OneDrive_1_22.10.2023/Задание 6.txt" afterDir="false" />
+    <list default="true" id="0146f9b9-23b0-4f3e-b464-b8ee3c874264" name="Changes" comment="complete lesson 3">
+      <change beforePath="$PROJECT_DIR$/Lesson3/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/Form1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,19 +19,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://F:/Education/compGraph/Lesson3/Lesson3/Form1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lesson3/obj/Debug/.NETFramework,Version=v4.8.1.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
@@ -116,28 +83,40 @@
       <option name="presentableId" value="Default" />
       <updated>1701364418859</updated>
       <workItem from="1701364421244" duration="4845000" />
-      <workItem from="1701453531713" duration="1855000" />
+      <workItem from="1701453531713" duration="2234000" />
     </task>
+    <task id="LOCAL-00001" summary="complete lesson 3">
+      <option name="closed" value="true" />
+      <created>1701455603644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701455603644</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="complete lesson 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete lesson 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Lesson3/Form1.cs</url>
-          <line>71</line>
+          <line>61</line>
           <properties documentPath="F:\Education\compGraph\Lesson3\Lesson3\Form1.cs" initialLine="70" containingFunctionPresentation="Method 'Parser1'">
             <startOffsets>
-              <option value="1967" />
+              <option value="1829" />
             </startOffsets>
             <endOffsets>
-              <option value="2003" />
+              <option value="1865" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

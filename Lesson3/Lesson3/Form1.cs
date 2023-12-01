@@ -13,6 +13,9 @@ namespace Lesson3
         public Form1()
         {
             InitializeComponent();
+            
+            chart1.ChartAreas[0].AxisX.Title = "x";
+            chart1.ChartAreas[0].AxisY.Title = "Y";
         }
 
         private void createGraph_Click(object sender, EventArgs e)
