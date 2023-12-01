@@ -9,3 +9,14 @@ E:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.csproj.CoreComp
 E:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.exe
 E:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.pdb
 E:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.Form1.resources
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\bin\Debug\Lesson1.exe.config
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\bin\Debug\Lesson1.exe
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\bin\Debug\Lesson1.pdb
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.csproj.AssemblyReference.cache
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.csproj.SuggestedBindingRedirects.cache
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.Form1.resources
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.Properties.Resources.resources
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.csproj.GenerateResource.cache
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.csproj.CoreCompileInputs.cache
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.exe
+F:\Education\compGraph\Lesson1\Lesson1\Lesson1\obj\Debug\Lesson1.pdb
