@@ -11,7 +11,8 @@ namespace Lesson5
         public Form1()
         {
             InitializeComponent();
-            myBitmap = new Bitmap("F:\\Education\\compGraph\\Lesson5\\Lesson5\\tyan.jpg");
+            String path = @"img\tyan.jpg";
+            myBitmap = new Bitmap(path);
             pictureBox1.Image = myBitmap;
             Console.WriteLine(myBitmap.GetPixel(20, 20));
 

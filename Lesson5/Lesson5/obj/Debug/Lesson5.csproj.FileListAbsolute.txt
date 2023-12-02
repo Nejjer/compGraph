@@ -9,3 +9,4 @@ F:\Education\compGraph\Lesson5\Lesson5\obj\Debug\Lesson5.csproj.CoreCompileInput
 F:\Education\compGraph\Lesson5\Lesson5\obj\Debug\Lesson5.exe
 F:\Education\compGraph\Lesson5\Lesson5\obj\Debug\Lesson5.pdb
 F:\Education\compGraph\Lesson5\Lesson5\obj\Debug\Lesson5.Form1.resources
+F:\Education\compGraph\Lesson5\Lesson5\bin\Debug\img\tyan.jpg
