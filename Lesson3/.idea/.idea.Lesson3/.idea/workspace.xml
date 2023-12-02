@@ -7,9 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0146f9b9-23b0-4f3e-b464-b8ee3c874264" name="Changes" comment="complete lesson 3">
-      <change beforePath="$PROJECT_DIR$/Lesson3/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/Form1.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0146f9b9-23b0-4f3e-b464-b8ee3c874264" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701364418859</updated>
       <workItem from="1701364421244" duration="4845000" />
-      <workItem from="1701453531713" duration="2234000" />
+      <workItem from="1701453531713" duration="2555000" />
     </task>
     <task id="LOCAL-00001" summary="complete lesson 3">
       <option name="closed" value="true" />
@@ -93,7 +91,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701455603644</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Complete Lesson3">
+      <option name="closed" value="true" />
+      <created>1701455995686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1701455995686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,20 +109,21 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="complete lesson 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete lesson 3" />
+    <MESSAGE value="Complete Lesson3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete Lesson3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Lesson3/Form1.cs</url>
-          <line>61</line>
+          <line>62</line>
           <properties documentPath="F:\Education\compGraph\Lesson3\Lesson3\Form1.cs" initialLine="70" containingFunctionPresentation="Method 'Parser1'">
             <startOffsets>
-              <option value="1829" />
+              <option value="1844" />
             </startOffsets>
             <endOffsets>
-              <option value="1865" />
+              <option value="1880" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
