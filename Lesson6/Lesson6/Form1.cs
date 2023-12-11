@@ -90,26 +90,13 @@ namespace Lesson6
             GL.Vertex3(0.0f, 0.0f, 300.0f);
             GL.End();
 
-            // //Рисуем треугольник
-            // float z = 40f;
-            // // рисуем разноцветный треугольник
-            // GL.Begin(BeginMode.Triangles);
-            // GL.Color3(clr1);
-            // GL.Vertex3(-100.0f, -100.0f, z);
-            // GL.Color3(clr2);
-            // GL.Vertex3(100.0f, -100.0f, z);
-            // GL.Color3(clr3);
-            // GL.Vertex3(0.0f, 100.0f, z);
-            // GL.End();
-
-
             // Meshs.DrawParallelepiped(new Vector3(10, 10, 10), 100, 100, 100,
             //     new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
             //     true);
-            
-            Meshs.DrawPyramid(new Vector3(10, 10, 10), 100, 100, 100,
+
+            Meshs.DrawTrapezoid(new Vector3(10, 10, 10), 100, 100, 100,
                 new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
-                true);
+                false);
 
             glControl1.SwapBuffers();
         }
