@@ -5,7 +5,6 @@ F:\Education\compGraph\Lesson6\Lesson6\bin\Debug\OpenTK.Compatibility.dll
 F:\Education\compGraph\Lesson6\Lesson6\bin\Debug\OpenTK.dll
 F:\Education\compGraph\Lesson6\Lesson6\bin\Debug\OpenTK.GLControl.dll
 F:\Education\compGraph\Lesson6\Lesson6\obj\Debug\Lesson6.csproj.AssemblyReference.cache
-F:\Education\compGraph\Lesson6\Lesson6\obj\Debug\Lesson6.csproj.SuggestedBindingRedirects.cache
 F:\Education\compGraph\Lesson6\Lesson6\obj\Debug\Lesson6.Properties.Resources.resources
 F:\Education\compGraph\Lesson6\Lesson6\obj\Debug\Lesson6.csproj.GenerateResource.cache
 F:\Education\compGraph\Lesson6\Lesson6\obj\Debug\Lesson6.csproj.CoreCompileInputs.cache

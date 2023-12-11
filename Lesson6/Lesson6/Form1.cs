@@ -103,7 +103,11 @@ namespace Lesson6
             // GL.End();
 
 
-            Meshs.DrawParallelepiped(new Vector3(10, 10, 10), 100, 100, 100,
+            // Meshs.DrawParallelepiped(new Vector3(10, 10, 10), 100, 100, 100,
+            //     new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
+            //     true);
+            
+            Meshs.DrawPyramid(new Vector3(10, 10, 10), 100, 100, 100,
                 new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
                 true);
 
