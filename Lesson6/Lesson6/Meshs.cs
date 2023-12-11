@@ -69,7 +69,7 @@ namespace Lesson6
 
         public static void DrawParallelepiped(Vector3 start, float lx, float ly, float lz, Color[] clr, bool drawLines)
         {
-            GL.Begin(drawLines ? BeginMode.Lines : BeginMode.Quads);
+            GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
             var i = 0;
 
             //top
@@ -81,10 +81,10 @@ namespace Lesson6
 
             //bottom
             GL.Color4(clr[i++ % clr.Length]);
-            GL.Vertex3(start.X, start.Y, start.Z);
-            GL.Vertex3(start.X + lx, start.Y, start.Z);
-            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
             GL.Vertex3(start.X, start.Y + ly, start.Z);
+            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
+            GL.Vertex3(start.X + lx, start.Y, start.Z);
+            GL.Vertex3(start.X, start.Y, start.Z);
 
             //front
             GL.Color4(clr[i++ % clr.Length]);
@@ -92,13 +92,6 @@ namespace Lesson6
             GL.Vertex3(start.X, start.Y, start.Z + lz);
             GL.Vertex3(start.X, start.Y + ly, start.Z + lz);
             GL.Vertex3(start.X, start.Y + ly, start.Z);
-
-            //back
-            GL.Color4(clr[i++ % clr.Length]);
-            GL.Vertex3(start.X + lx, start.Y, start.Z);
-            GL.Vertex3(start.X + lx, start.Y, start.Z + lz);
-            GL.Vertex3(start.X + lx, start.Y + ly, start.Z + lz);
-            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
 
             //right
             GL.Color4(clr[i++ % clr.Length]);
@@ -109,10 +102,17 @@ namespace Lesson6
 
             //left
             GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(start.X, start.Y + ly, start.Z + lz);
+            GL.Vertex3(start.X + lx, start.Y + ly, start.Z + lz);
+            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
             GL.Vertex3(start.X, start.Y + ly, start.Z);
+
+            //back
+            GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
             GL.Vertex3(start.X + lx, start.Y + ly, start.Z + lz);
-            GL.Vertex3(start.X, start.Y + ly, start.Z + lz);
+            GL.Vertex3(start.X + lx, start.Y, start.Z + lz);
+            GL.Vertex3(start.X + lx, start.Y, start.Z);
 
             GL.End();
         }
