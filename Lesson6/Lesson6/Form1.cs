@@ -94,9 +94,9 @@ namespace Lesson6
             //     new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
             //     true);
 
-            Meshs.DrawTrapezoid(new Vector3(10, 10, 10), 100, 100, 100,
+            Meshs.DrawOctahedron(new Vector3(10, 10, 10), 100, 100, 100,
                 new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
-                false);
+                true);
 
             glControl1.SwapBuffers();
         }

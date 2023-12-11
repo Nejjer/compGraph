@@ -108,12 +108,11 @@ namespace Lesson6
             GL.End();
         }
 
-        public static void DrawTrapezoid(Vector3 start, float lx, float ly, float lz, Color[] clr, bool drawLines)
+        public static void DrawTrapezoid(Vector3 start, float lx, float ly, float lz, Color[] clr, float ratio,
+            bool drawLines)
         {
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
             var i = 0;
-
-            var ratio = 0.6f;
 
             var xMin = start.X * ratio;
             var xMax = (start.X + lx) * ratio;
@@ -163,6 +162,67 @@ namespace Lesson6
             GL.Vertex3(xMax, yMax, zMax);
             GL.Vertex3(xMax, yMin, zMax);
             GL.Vertex3(start.X + lx, start.Y, zMin);
+
+            GL.End();
+        }
+
+        public static void DrawOctahedron(Vector3 start, float lx, float ly, float lz, Color[] clr,
+            bool drawLines)
+        {
+            GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Triangles);
+            var i = 0;
+
+            var pointUp = new Vector3((start.X + lx) / 2, (start.Y + ly) / 2, start.Z + lz);
+            var pointDown = new Vector3((start.X + lx) / 2, (start.Y + ly) / 2, start.Z);
+            var zMiddle = (start.Z + lz) / 2;
+
+            //front up
+            GL.Color4(clr[i++]);
+            GL.Vertex3(pointUp);
+            GL.Vertex3(start.X, start.Y, zMiddle);
+            GL.Vertex3(start.X, start.Y + ly, zMiddle);
+
+            //left up
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointUp);
+            GL.Vertex3(start.X, start.Y + ly, zMiddle);
+            GL.Vertex3(start.X + lx, start.Y + ly, zMiddle);
+
+            //back up
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointUp);
+            GL.Vertex3(start.X + lx, start.Y + ly, zMiddle);
+            GL.Vertex3(start.X + lx, start.Y, zMiddle);
+
+            //right up
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointUp);
+            GL.Vertex3(start.X + lx, start.Y, zMiddle);
+            GL.Vertex3(start.X, start.Y, zMiddle);
+            
+            //front down
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointDown);
+            GL.Vertex3(start.X, start.Y, zMiddle);
+            GL.Vertex3(start.X, start.Y + ly, zMiddle);
+
+            //left down
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointDown);
+            GL.Vertex3(start.X, start.Y + ly, zMiddle);
+            GL.Vertex3(start.X + lx, start.Y + ly, zMiddle);
+
+            //back down
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointDown);
+            GL.Vertex3(start.X + lx, start.Y + ly, zMiddle);
+            GL.Vertex3(start.X + lx, start.Y, zMiddle);
+
+            //right down
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(pointDown);
+            GL.Vertex3(start.X + lx, start.Y, zMiddle);
+            GL.Vertex3(start.X, start.Y, zMiddle);
 
             GL.End();
         }
