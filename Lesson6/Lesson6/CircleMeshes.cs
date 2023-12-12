@@ -2,7 +2,6 @@
 using System.Drawing;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
-using Tao.OpenGl;
 
 namespace Lesson6
 {
@@ -13,7 +12,7 @@ namespace Lesson6
         {
             var colorIndex = 0;
 
-            var mainPoints = GetVectorsPolygon(countAngles,radius, start.X, start.Y, start.Z);
+            var mainPoints = GetVectorsPolygon(countAngles, radius, start.X, start.Y, start.Z);
             var topPoint = new Vector3(start.X, start.Y, start.Z + lz);
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Polygon);
             GL.Color4(clr[colorIndex++ % clr.Length]);
@@ -46,26 +45,43 @@ namespace Lesson6
 
             return vectors;
         }
-        
+
         public static void DrawConus(Vector3 start, float radius, float lz, Color[] clr,
             bool drawLines)
         {
             DrawPyramid(start, radius, 64, lz, clr, drawLines);
         }
-        
-        private static void DrawCone()
-        {
-            float radius = 100.0f;
-            int slices = 32;
-            float height = 100.0f;
 
-            GL.Begin(PrimitiveType.TriangleFan);
-            GL.Vertex3(0, height, 0); // Apex
-            for (int i = 0; i <= slices; i++)
+        public static void DrawCylinder(Vector3 start, float radius, int countAngles, float lz, Color[] clr,
+            bool drawLines)
+        {
+            var colorIndex = 0;
+
+            var topPoints = GetVectorsPolygon(countAngles, radius, start.X, start.Y, start.Z);
+            var bottomPoints = GetVectorsPolygon(countAngles, radius, start.X, start.Y, start.Z + lz);
+
+            //рисуем стороны
+            GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
+            for (var i = 0; i < topPoints.Length; i++)
             {
-                float angle = (float)i / slices * 2.0f * (float)Math.PI;
-                GL.Vertex3((float)Math.Cos(angle) * radius, 0, (float)Math.Sin(angle) * radius);
+                GL.Color4(clr[colorIndex++ % clr.Length]);
+                //рисуем по очереди, сначала сверху вниз, потом снизу вверх
+                GL.Vertex3(bottomPoints[i]);
+                GL.Vertex3(topPoints[i]);
+                GL.Vertex3(topPoints[(i + 1) % topPoints.Length]);
+                GL.Vertex3(bottomPoints[(i + 1) % bottomPoints.Length]);
             }
+
+            GL.End();
+            //рисуем основания
+            GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Polygon);
+            GL.Color4(clr[colorIndex++ % clr.Length]);
+            foreach (var point in topPoints) GL.Vertex3(point);
+            GL.End();
+
+            GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Polygon);
+            GL.Color4(clr[colorIndex++ % clr.Length]);
+            foreach (var point in bottomPoints) GL.Vertex3(point);
             GL.End();
         }
     }

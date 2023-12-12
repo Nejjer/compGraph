@@ -94,7 +94,7 @@ namespace Lesson6
             //     new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
             //     true);
 
-            CircleMeshes.DrawConus(new Vector3(0, 0, 0), 100, 100, 
+            CircleMeshes.DrawCylinder(new Vector3(0, 0, 0), 100, 12, 100,
                 new[] { Color.Aqua, Color.Blue },
                 false);
 
