@@ -86,44 +86,42 @@ namespace Lesson6
             GL.End();
         }
 
-        public static void DrawSphere(Vector3 start, float radius, int segmentY, int segmentX, float lz, Color[] clr,
+        public static void DrawSphere(Vector3 start, float radius, int stackCount, int sectorCount, Color[] clr,
             bool drawLines)
         {
-            var stackCount = 16;
-            var sectorCount = 8;
-
             var vertexes = new List<Vector3>();
 
             var sectorStep = 2 * Math.PI / sectorCount;
             var stackStep = Math.PI / stackCount;
             double sectorAngle, stackAngle;
             //Создаем массив вершин
-            for (var i = 0; i < stackCount; i++)
+            for (var i = 0; i <= stackCount; i++)
             {
                 stackAngle = Math.PI / 2 - i * stackStep;
-                var z = radius * Math.Sin(stackAngle);
+                var z = radius * Math.Sin(stackAngle) + start.Z;
 
-                for (var j = 0; j < sectorCount; j++)
+                for (var j = 0; j <= sectorCount; j++)
                 {
                     sectorAngle = j * sectorStep;
 
-                    var x = radius * Math.Cos(stackAngle) * Math.Cos(sectorAngle);
-                    var y = radius * Math.Cos(stackAngle) * Math.Sin(sectorAngle);
+                    var x = radius * Math.Cos(stackAngle) * Math.Cos(sectorAngle) + start.X;
+                    var y = radius * Math.Cos(stackAngle) * Math.Sin(sectorAngle) + start.Y;
                     vertexes.Add(new Vector3((float)x, (float)y, (float)z));
                 }
             }
+
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
             var colorIndex = 0;
             //Рисуем квадратами сферу
-            for (int i = 0; i < vertexes.Count; i++)
+            for (var i = 0; i < vertexes.Count; i++)
             {
                 GL.Color4(clr[colorIndex++ % clr.Length]);
                 GL.Vertex3(vertexes[i]);
                 GL.Vertex3(vertexes[(i + 1) % vertexes.Count]);
+                GL.Vertex3(vertexes[(i + 2 + sectorCount) % vertexes.Count]);
                 GL.Vertex3(vertexes[(i + 1 + sectorCount) % vertexes.Count]);
-                GL.Vertex3(vertexes[(i + sectorCount) % vertexes.Count]);
             }
-            
+
             GL.End();
         }
     }
