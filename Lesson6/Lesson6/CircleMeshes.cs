@@ -124,36 +124,12 @@ namespace Lesson6
 
             GL.End();
         }
-        
+
         public static void DrawThor(Vector3 start, float radius, int stackCount, int sectorCount, Color[] clr,
             bool drawLines)
         {
-            // int numc = 16, numt = 16;
-            //
-            // double TWOPI = 2 * Math.PI;
-            // for (int i = 0; i < numc; i++) {
-            //     GL.Begin(BeginMode.QuadStrip);
-            //     for (int j = 0; j <= numt; j++) {
-            //         for (int k = 1; k >= 0; k--) {
-            //
-            //             double s = (i + k) % numc + 50;
-            //             double t = j % numt;
-            //
-            //             double x = (100 + 10 * Math.Cos(s * TWOPI / numc)) * Math.Cos(t * TWOPI / numt);
-            //             double y = (100 + 10 * Math.Cos(s * TWOPI / numc)) * Math.Sin(t * TWOPI / numt);
-            //             double z = 10 * Math.Sin(s * TWOPI / numc);
-            //
-            //             GL.Vertex3(2 * x, 2 * y, 2 * z);
-            //         }
-            //     }
-            //     GL.End();
-            // }
-            //
-            //
-            
-            
             var vertexes = new List<Vector3>();
-            
+
             var sectorStep = 2 * Math.PI / sectorCount;
             var stackStep = 2 * Math.PI / stackCount;
             double sectorAngle, stackAngle;
@@ -161,18 +137,18 @@ namespace Lesson6
             for (var i = 0; i <= stackCount; i++)
             {
                 stackAngle = Math.PI / 2 - i * stackStep;
-            
+
                 for (var j = 0; j <= sectorCount; j++)
                 {
                     sectorAngle = j * sectorStep;
                     var z = 20 * Math.Sin(sectorAngle);
-            
+
                     var x = Math.Cos(stackAngle) * (Math.Cos(sectorAngle) * 20 + radius);
                     var y = Math.Sin(stackAngle) * (Math.Cos(sectorAngle) * 20 + radius);
                     vertexes.Add(new Vector3((float)x, (float)y, (float)z));
                 }
             }
-            
+
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
             var colorIndex = 0;
             //Рисуем квадратами сферу
@@ -184,7 +160,53 @@ namespace Lesson6
                 GL.Vertex3(vertexes[(i + 2 + sectorCount) % vertexes.Count]);
                 GL.Vertex3(vertexes[(i + 1 + sectorCount) % vertexes.Count]);
             }
-            
+
+            GL.End();
+        }
+
+        public static void DrawSpiral(Vector3 start, float radius, int stackCount, int sectorCount, Color[] clr,
+            bool drawLines)
+        {
+            var vertexes = new List<Vector3>();
+            var spinsCount = 3;
+            var sectorStep = 2 * Math.PI / sectorCount;
+            var stackStep = 2 * Math.PI / stackCount;
+            double sectorAngle, stackAngle;
+            //Создаем массив вершин
+            var spins = 0;
+            for (var spineIndex = 1; spineIndex <= spinsCount; spineIndex++)
+            for (var i = 0; i <= stackCount; i++)
+            {
+                stackAngle = Math.PI / 2 - i * stackStep;
+                if (i == 0 && spineIndex != 1) continue;
+
+                spins++;
+                var spinOffset = 50f / stackCount;
+                for (var j = 0; j <= sectorCount; j++)
+                {
+                    sectorAngle = j * sectorStep;
+                    var z = 20 * Math.Sin(sectorAngle) + spinOffset * spins;
+
+                    var x = Math.Cos(stackAngle) * (Math.Cos(sectorAngle) * 20 + radius);
+                    var y = Math.Sin(stackAngle) * (Math.Cos(sectorAngle) * 20 + radius);
+                    vertexes.Add(new Vector3((float)x, (float)y, (float)z));
+                }
+            }
+
+
+            GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
+            var colorIndex = 0;
+            //Рисуем квадратами сферу
+            for (var i = 0; i < vertexes.Count; i++)
+            {
+                if (i + 3 > vertexes.Count - sectorCount) break;
+                GL.Color4(clr[colorIndex++ % clr.Length]);
+                GL.Vertex3(vertexes[i]);
+                GL.Vertex3(vertexes[(i + 1) % vertexes.Count]);
+                GL.Vertex3(vertexes[(i + 2 + sectorCount) % vertexes.Count]);
+                GL.Vertex3(vertexes[(i + 1 + sectorCount) % vertexes.Count]);
+            }
+
             GL.End();
         }
     }

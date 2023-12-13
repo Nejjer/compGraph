@@ -94,10 +94,10 @@ namespace Lesson6
             //     new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
             //     true);
 
-            CircleMeshes.DrawThor(new Vector3(0, 0, 0), 100, 16, 8,
-                new[] { Color.Aqua, Color.Blue, Color.Crimson, Color.Azure,  },
+            CircleMeshes.DrawSpiral(new Vector3(0, 0, 0), 100, 32, 16,
+                new[] { Color.Aqua, Color.Blue, Color.Crimson, Color.Azure },
                 false);
-            
+
 
             glControl1.SwapBuffers();
         }
