@@ -10,6 +10,7 @@ namespace Lesson6
     {
         private double _angle;
         private double _dangle;
+        private bool _drawLines;
         private bool _loaded;
 
         public Form1()
@@ -78,7 +79,6 @@ namespace Lesson6
             GL.Vertex3(-300.0f, 0.0f, 0.0f);
             GL.Vertex3(300.0f, 0.0f, 0.0f);
             GL.End();
-
             GL.Begin(BeginMode.Lines);
             GL.Color3(clr2); //Y-красная
             GL.Vertex3(0.0f, -300.0f, 0.0f);
@@ -94,9 +94,48 @@ namespace Lesson6
             //     new[] { Color.Aqua, Color.Blue, Color.Brown, Color.Chocolate, Color.Chartreuse, Color.Purple },
             //     true);
 
-            CircleMeshes.DrawSpiral(new Vector3(0, 0, 0), 100, 32, 16,
-                new[] { Color.Aqua, Color.Blue, Color.Crimson, Color.Azure },
-                false);
+            // CircleMeshes.DrawSpiral(new Vector3(0, 0, 0), 100, 32, 16,
+            //     new[] { Color.Aqua, Color.Blue, Color.Crimson, Color.Azure },
+            //     false);
+
+            var start = new Vector3(0, 0, 0);
+            var clrs = new[] { Color.Aqua, Color.Blue, Color.Crimson, Color.Azure };
+            var size = 100;
+
+            switch (comboBoxMesh.Text)
+            {
+                default:
+                    Meshs.DrawParallelepiped(start, size, size, size, clrs, _drawLines);
+                    break;
+                case "pyramid":
+                    Meshs.DrawPyramid(start, size, size, size, clrs, _drawLines);
+                    break;
+                case "trapezoid":
+                    Meshs.DrawTrapezoid(start, size, size, size, clrs, 0.2f, _drawLines);
+                    break;
+                case "octahedron":
+                    Meshs.DrawOctahedron(start, size, size, size, clrs, _drawLines);
+                    break;
+                case "polygon pyramid":
+                    CircleMeshes.DrawPolygonPyramid(start, size, 16, size, clrs, _drawLines);
+                    break;
+                case "conus":
+                    CircleMeshes.DrawConus(start, size, size, clrs, _drawLines);
+                    break;
+                case "cylinder":
+                    CircleMeshes.DrawCylinder(start, size, 16, size, clrs, _drawLines);
+                    break;
+                case "sphere":
+                    CircleMeshes.DrawSphere(start, size, 16, 16, clrs, _drawLines);
+                    break;
+                case "bublik:)":
+                    CircleMeshes.DrawThor(start, 64, 32, size - 10, size + 10, clrs, _drawLines);
+                    break;
+                case "spiral":
+                    CircleMeshes.DrawSpiral(start, 64, 32, size - 10, size + 10, 4, clrs, _drawLines);
+                    break;
+                    
+            }
 
 
             glControl1.SwapBuffers();
@@ -119,6 +158,17 @@ namespace Lesson6
         private void ButtonZeroAgnle_Click(object sender, EventArgs e)
         {
             _angle = 0;
+            glControl1.Invalidate();
+        }
+
+        private void comboBoxMesh_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            glControl1.Invalidate();
+        }
+
+        private void isDrawLines_CheckedChanged(object sender, EventArgs e)
+        {
+            _drawLines = !_drawLines;
             glControl1.Invalidate();
         }
     }

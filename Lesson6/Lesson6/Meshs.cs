@@ -11,6 +11,7 @@ namespace Lesson6
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
             var i = 0;
 
+            //Определяем координаты сторон
             var xMin = start.X;
             var xMax = start.X + lx;
             var yMin = start.Y;
@@ -18,42 +19,42 @@ namespace Lesson6
             var zMin = start.Z;
             var zMax = start.Z + lz;
 
-            //top
+            //верх
             GL.Color4(clr[i++]);
             GL.Vertex3(xMin, yMin, zMax);
             GL.Vertex3(xMax, yMin, zMax);
             GL.Vertex3(xMax, yMax, zMax);
             GL.Vertex3(xMin, yMax, zMax);
 
-            //bottom
+            //низ
             GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(xMin, yMax, zMin);
             GL.Vertex3(xMax, yMax, zMin);
             GL.Vertex3(xMax, yMin, zMin);
             GL.Vertex3(xMin, yMin, zMin);
 
-            //front
+            //перед
             GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(xMin, yMin, zMin);
             GL.Vertex3(xMin, yMin, zMax);
             GL.Vertex3(xMin, yMax, zMax);
             GL.Vertex3(xMin, yMax, zMin);
 
-            //right
+            //правая сторона
             GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(xMin, yMin, zMin);
             GL.Vertex3(xMax, yMin, zMin);
             GL.Vertex3(xMax, yMin, zMax);
             GL.Vertex3(xMin, yMin, zMax);
 
-            //left
+            //левая сторона
             GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(xMin, yMax, zMax);
             GL.Vertex3(xMax, yMax, zMax);
             GL.Vertex3(xMax, yMax, zMin);
             GL.Vertex3(xMin, yMax, zMin);
 
-            //back
+            //задняя сторона
             GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(xMax, yMax, zMin);
             GL.Vertex3(xMax, yMax, zMax);
@@ -64,45 +65,47 @@ namespace Lesson6
             GL.End();
         }
 
-        public static void DrawPyramid(Vector3 start, float lx, float ly, float lz, Color[] clr, bool drawLines)
+        public static void DrawPyramid(Vector3 start, float mainX, float mainY, float height, Color[] clr,
+            bool drawLines)
         {
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Quads);
             var i = 0;
 
-            //bottom
+            //основание
             GL.Color4(clr[i++]);
-            GL.Vertex3(start.X, start.Y + ly, start.Z);
-            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
-            GL.Vertex3(start.X + lx, start.Y, start.Z);
+            GL.Vertex3(start.X, start.Y + mainY, start.Z);
+            GL.Vertex3(start.X + mainX, start.Y + mainY, start.Z);
+            GL.Vertex3(start.X + mainX, start.Y, start.Z);
             GL.Vertex3(start.X, start.Y, start.Z);
             GL.End();
 
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Triangles);
 
-            var point = new Vector3((start.X + lx) / 2, (start.Y + ly) / 2, start.Z + lz);
+            //Координаты вершины
+            var topPoint = new Vector3((start.X + mainX) / 2, (start.Y + mainY) / 2, start.Z + height);
 
             //front
-            GL.Color4(clr[i++]);
-            GL.Vertex3(point);
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(topPoint);
             GL.Vertex3(start.X, start.Y, start.Z);
-            GL.Vertex3(start.X, start.Y + ly, start.Z);
+            GL.Vertex3(start.X, start.Y + mainY, start.Z);
 
             //left
-            GL.Color4(clr[i++]);
-            GL.Vertex3(point);
-            GL.Vertex3(start.X, start.Y + ly, start.Z);
-            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(topPoint);
+            GL.Vertex3(start.X, start.Y + mainY, start.Z);
+            GL.Vertex3(start.X + mainX, start.Y + mainY, start.Z);
 
             //back
-            GL.Color4(clr[i++]);
-            GL.Vertex3(point);
-            GL.Vertex3(start.X + lx, start.Y + ly, start.Z);
-            GL.Vertex3(start.X + lx, start.Y, start.Z);
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(topPoint);
+            GL.Vertex3(start.X + mainX, start.Y + mainY, start.Z);
+            GL.Vertex3(start.X + mainX, start.Y, start.Z);
 
             //right
-            GL.Color4(clr[i++]);
-            GL.Vertex3(point);
-            GL.Vertex3(start.X + lx, start.Y, start.Z);
+            GL.Color4(clr[i++ % clr.Length]);
+            GL.Vertex3(topPoint);
+            GL.Vertex3(start.X + mainX, start.Y, start.Z);
             GL.Vertex3(start.X, start.Y, start.Z);
 
             GL.End();
@@ -119,7 +122,7 @@ namespace Lesson6
             var yMin = start.Y * ratio;
             var yMax = (start.Y + ly) * ratio;
             var zMin = start.Z;
-            var zMax = (start.Z + lz) * ratio;
+            var zMax = start.Z + lz;
 
             //top
             GL.Color4(clr[i++]);
@@ -166,14 +169,17 @@ namespace Lesson6
             GL.End();
         }
 
+        //Октаэдр
         public static void DrawOctahedron(Vector3 start, float lx, float ly, float lz, Color[] clr,
             bool drawLines)
         {
             GL.Begin(drawLines ? BeginMode.LineLoop : BeginMode.Triangles);
             var i = 0;
-
+            //Верхняя вершина
             var pointUp = new Vector3((start.X + lx) / 2, (start.Y + ly) / 2, start.Z + lz);
+            //Нижняя вершина
             var pointDown = new Vector3((start.X + lx) / 2, (start.Y + ly) / 2, start.Z);
+            //Середина по высоте
             var zMiddle = (start.Z + lz) / 2;
 
             //front up
@@ -199,7 +205,7 @@ namespace Lesson6
             GL.Vertex3(pointUp);
             GL.Vertex3(start.X + lx, start.Y, zMiddle);
             GL.Vertex3(start.X, start.Y, zMiddle);
-            
+
             //front down
             GL.Color4(clr[i++ % clr.Length]);
             GL.Vertex3(pointDown);

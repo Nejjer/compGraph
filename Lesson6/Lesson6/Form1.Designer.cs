@@ -30,6 +30,9 @@
         private void InitializeComponent()
         {
             this.ButtonsGroupBox = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.isDrawLines = new System.Windows.Forms.CheckBox();
+            this.comboBoxMesh = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.ButtonZeroAgnle = new System.Windows.Forms.Button();
             this.ButtonRotate = new System.Windows.Forms.Button();
@@ -43,6 +46,9 @@
             // 
             // ButtonsGroupBox
             // 
+            this.ButtonsGroupBox.Controls.Add(this.label1);
+            this.ButtonsGroupBox.Controls.Add(this.isDrawLines);
+            this.ButtonsGroupBox.Controls.Add(this.comboBoxMesh);
             this.ButtonsGroupBox.Controls.Add(this.numericUpDown1);
             this.ButtonsGroupBox.Controls.Add(this.ButtonZeroAgnle);
             this.ButtonsGroupBox.Controls.Add(this.ButtonRotate);
@@ -53,6 +59,34 @@
             this.ButtonsGroupBox.TabIndex = 0;
             this.ButtonsGroupBox.TabStop = false;
             this.ButtonsGroupBox.Text = "Buttons";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(331, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 18);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Рисовать линии";
+            // 
+            // isDrawLines
+            // 
+            this.isDrawLines.Location = new System.Drawing.Point(304, 92);
+            this.isDrawLines.Name = "isDrawLines";
+            this.isDrawLines.Size = new System.Drawing.Size(20, 21);
+            this.isDrawLines.TabIndex = 5;
+            this.isDrawLines.Text = "checkBox1";
+            this.isDrawLines.UseVisualStyleBackColor = true;
+            this.isDrawLines.CheckedChanged += new System.EventHandler(this.isDrawLines_CheckedChanged);
+            // 
+            // comboBoxMesh
+            // 
+            this.comboBoxMesh.FormattingEnabled = true;
+            this.comboBoxMesh.Items.AddRange(new object[] { "parallelepiped", "pyramid", "trapezoid", "octahedron", "polygon pyramid", "conus", "cylinder", "sphere", "bublik:)", "spiral" });
+            this.comboBoxMesh.Location = new System.Drawing.Point(301, 60);
+            this.comboBoxMesh.Name = "comboBoxMesh";
+            this.comboBoxMesh.Size = new System.Drawing.Size(128, 21);
+            this.comboBoxMesh.TabIndex = 4;
+            this.comboBoxMesh.SelectedIndexChanged += new System.EventHandler(this.comboBoxMesh_SelectedIndexChanged);
             // 
             // numericUpDown1
             // 
@@ -128,6 +162,11 @@
             this.DrawingGroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.CheckBox isDrawLines;
+        private System.Windows.Forms.Label label1;
+
+        private System.Windows.Forms.ComboBox comboBoxMesh;
 
         private System.Windows.Forms.NumericUpDown numericUpDown1;
 
