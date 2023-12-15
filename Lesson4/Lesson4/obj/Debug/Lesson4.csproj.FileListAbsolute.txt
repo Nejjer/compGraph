@@ -1,0 +1,13 @@
+F:\Education\compGraph\Lesson4\Lesson4\bin\Debug\Lesson4.exe.config
+F:\Education\compGraph\Lesson4\Lesson4\bin\Debug\Lesson4.exe
+F:\Education\compGraph\Lesson4\Lesson4\bin\Debug\Lesson4.pdb
+F:\Education\compGraph\Lesson4\Lesson4\bin\Debug\OpenTK.Compatibility.dll
+F:\Education\compGraph\Lesson4\Lesson4\bin\Debug\OpenTK.dll
+F:\Education\compGraph\Lesson4\Lesson4\bin\Debug\OpenTK.GLControl.dll
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.csproj.AssemblyReference.cache
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.Properties.Resources.resources
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.csproj.GenerateResource.cache
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.csproj.CoreCompileInputs.cache
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.csproj.CopyComplete
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.exe
+F:\Education\compGraph\Lesson4\Lesson4\obj\Debug\Lesson4.pdb
