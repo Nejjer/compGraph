@@ -43,7 +43,7 @@ namespace Lesson4
             var modelview = Matrix4.LookAt(Vector3.Zero, Vector3.UnitZ, Vector3.UnitY);
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref modelview);
-            new Fractal().Draw(0,0,1,10, Direction.East);
+            new Fractal().Draw(0,0,1,10);
             SwapBuffers();
         }
 

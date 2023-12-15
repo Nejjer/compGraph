@@ -2,7 +2,6 @@ F:\Education\compGraph\Lesson3\Lesson3\bin\Debug\Lesson3.exe.config
 F:\Education\compGraph\Lesson3\Lesson3\bin\Debug\Lesson3.exe
 F:\Education\compGraph\Lesson3\Lesson3\bin\Debug\Lesson3.pdb
 F:\Education\compGraph\Lesson3\Lesson3\obj\Debug\Lesson3.csproj.AssemblyReference.cache
-F:\Education\compGraph\Lesson3\Lesson3\obj\Debug\Lesson3.csproj.SuggestedBindingRedirects.cache
 F:\Education\compGraph\Lesson3\Lesson3\obj\Debug\Lesson3.Properties.Resources.resources
 F:\Education\compGraph\Lesson3\Lesson3\obj\Debug\Lesson3.csproj.GenerateResource.cache
 F:\Education\compGraph\Lesson3\Lesson3\obj\Debug\Lesson3.csproj.CoreCompileInputs.cache

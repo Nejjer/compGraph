@@ -7,7 +7,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0146f9b9-23b0-4f3e-b464-b8ee3c874264" name="Changes" comment="" />
+    <list default="true" id="0146f9b9-23b0-4f3e-b464-b8ee3c874264" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/bin/Debug/Lesson1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson1/Lesson1/Lesson1/obj/Debug/Lesson1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/bin/Debug/Lesson2._2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2.2.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2.2/Lesson2.2/obj/Debug/Lesson2._2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/Shapes/Circle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/Shapes/Circle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/Shapes/Shape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/Shapes/Shape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/bin/Debug/Lesson2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson2/Lesson2/obj/Debug/Lesson2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lesson3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lesson3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/bin/Debug/Lesson3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/bin/Debug/Lesson3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/bin/Debug/Lesson3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/bin/Debug/Lesson3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.csproj.SuggestedBindingRedirects.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson3/obj/Debug/Lesson3.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,29 +59,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Lesson3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\temat\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\temat\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\temat\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\temat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\temat\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\temat\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Lesson3" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -83,6 +115,7 @@
       <workItem from="1701364421244" duration="4845000" />
       <workItem from="1701453531713" duration="2555000" />
       <workItem from="1702285366341" duration="15000" />
+      <workItem from="1702630781724" duration="491000" />
     </task>
     <task id="LOCAL-00001" summary="complete lesson 3">
       <option name="closed" value="true" />
@@ -118,13 +151,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Lesson3/Form1.cs</url>
-          <line>62</line>
+          <line>64</line>
           <properties documentPath="F:\Education\compGraph\Lesson3\Lesson3\Form1.cs" initialLine="70" containingFunctionPresentation="Method 'Parser1'">
             <startOffsets>
-              <option value="1844" />
+              <option value="1925" />
             </startOffsets>
             <endOffsets>
-              <option value="1880" />
+              <option value="1961" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />

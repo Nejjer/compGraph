@@ -29,9 +29,11 @@ namespace Lesson3
 
             foreach (var fun in funs)
             {
+                //Инициализируем график
                 var series = chart1.Series.Add($"fun {fun}");
                 series.ChartType = SeriesChartType.Spline;
                 series.MarkerStyle = MarkerStyle.Circle;
+                //Парсим функцию
                 var expression = ParserFunction(fun);
                 for (var i = 0; i < 10; i++)
                 {
@@ -59,11 +61,13 @@ namespace Lesson3
                 funs.Add(match.Value);
                 Console.WriteLine(match.Value);
             }
-
+        
             for (var i = 0; i < funs.Count; i++)
             {
                 if (Regex.IsMatch(funs[i], @"([\^])"))
                 {
+                    //Библиотека NCalc для возведения в степень требует коснтрукцию вида Pow(x,2), поэтому ниже
+                    //я преобразую x^2 в Pow(x,2)
                     var before = funs.Take(i - 1).ToList();
                     var after = funs.Skip(i + 2).ToList();
                     var powFun = $"Pow({funs[i - 1]},{funs[i + 1]})";
@@ -75,7 +79,7 @@ namespace Lesson3
                 {
                     var before = funs.Take(i).ToList();
                     var after = funs.Skip(i + 2).ToList();
-                    //Делаем апперкейс первой буквы
+                    //Библиотека NCalc для функции синуса Sin(с большой буквы) тут я преобразую sin в Sin
                     var funFun = $"{funs[i][0].ToString().ToUpper()}{funs[i].Substring(1)}({funs[i + 1]})";
                     funs = before.Concat(new[] { funFun }).Concat(after).ToList();
                 }

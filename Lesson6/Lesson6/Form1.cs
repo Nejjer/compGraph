@@ -117,7 +117,7 @@ namespace Lesson6
                     Meshs.DrawOctahedron(start, size, size, size, clrs, _drawLines);
                     break;
                 case "polygon pyramid":
-                    CircleMeshes.DrawPolygonPyramid(start, size, 16, size, clrs, _drawLines);
+                    CircleMeshes.DrawPolygonPyramid(start, size, 6, size, clrs, _drawLines);
                     break;
                 case "conus":
                     CircleMeshes.DrawConus(start, size, size, clrs, _drawLines);
@@ -129,10 +129,10 @@ namespace Lesson6
                     CircleMeshes.DrawSphere(start, size, 16, 16, clrs, _drawLines);
                     break;
                 case "bublik:)":
-                    CircleMeshes.DrawThor(start, 64, 32, size - 10, size + 10, clrs, _drawLines);
+                    CircleMeshes.DrawThor(start, 16, 8, size - 10, size + 10, clrs, _drawLines);
                     break;
                 case "spiral":
-                    CircleMeshes.DrawSpiral(start, 64, 32, size - 10, size + 10, 4, clrs, _drawLines);
+                    CircleMeshes.DrawSpiral(start, 16, 8, size - 10, size + 10, 4, clrs, _drawLines);
                     break;
                     
             }

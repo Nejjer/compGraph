@@ -12,6 +12,7 @@ namespace Lesson2.Shapes
                      GetVectorsPolygon(countAngles, posX, posY, z)) GL.Vertex3(vector); 
         }
 
+        /** Возвращает координаты точек правильного многоугольника */
         private static Vector3[] GetVectorsPolygon(int countAngles, float posX, float posY, float z)
         {
             var vectors = new Vector3[countAngles];

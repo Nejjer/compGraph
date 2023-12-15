@@ -13,17 +13,16 @@ namespace Lesson4
 {
     public class Fractal
     {
-        public void Draw( float x, float y,float size, int n, Direction dir)
+        public void Draw( float x, float y,float size, int n)
         {
-            //DrawSquare(0,0,2);
             int n1 = n - 1;
             float fr = 0.4f * size, cr = 1.4f * size;
             if (n > 0)
             {
-                Draw(x + cr, y, fr, n1, Direction.East);
-                Draw(x, y + cr, fr, n1, Direction.North);
-                Draw(x - cr, y, fr, n1, Direction.West);
-                Draw(x, y - cr, fr, n1, Direction.South);
+                Draw(x + cr, y, fr, n1);
+                Draw(x, y + cr, fr, n1);
+                Draw(x - cr, y, fr, n1);
+                Draw(x, y - cr, fr, n1);
                 DrawSquare(x,y,size);
             }
         }
