@@ -25,6 +25,7 @@ namespace Lesson1.Shapes
         public void Draw()
         {
             _gr.FillPolygon(_brush, GetPoints());
+            _gr.DrawPolygon(new Pen(Color.Aqua), GetPoints());
         }
 
         public void Clear()
