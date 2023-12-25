@@ -27,8 +27,8 @@ namespace Lesson1.Shapes
         {
             _gr.FillEllipse(_brush, posX, posY, width, height);
             _gr.DrawEllipse(new Pen(Color.Aqua), posX, posY, width, height);
-            var fz = height / 5;
-            _gr.DrawString("sda", new Font("Arial", fz), new SolidBrush(Color.Aqua), posX + width / 2 - fz, posY + height / 2 - fz);
+            var fz = height / 6;
+            _gr.DrawString("круг", new Font("Arial", fz), new SolidBrush(Color.Aqua), posX + width / 2 - fz, posY + height / 2 - fz);
             
         }
 

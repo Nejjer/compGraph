@@ -11,11 +11,12 @@ namespace Lesson1
         private readonly Ellipse _ellipse;
         private readonly Line _line;
         private readonly Polygon _polygon;
+        private readonly Graphics gr;
 
         public Form1()
         {
             InitializeComponent();
-            var gr = DrawingPanel.CreateGraphics();
+            gr = DrawingPanel.CreateGraphics();
             _line = new Line(gr, BackColor);
             _ellipse = new Ellipse(gr, BackColor);
             _polygon = new Polygon(gr, BackColor);
@@ -128,12 +129,16 @@ namespace Lesson1
             _polygon.DrawByPoints(points.ToArray());
         }
 
+
         /**
-         * Стереть многоугольник
+         * Стереть все
          */
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var width = DrawingPanel.Width;
+            var height = DrawingPanel.Height;
+            gr.FillPolygon(new SolidBrush(BackColor),
+                new[] { new Point(0, 0), new Point(0, height), new Point(width, height), new Point(width, 0) });
         }
     }
 }
