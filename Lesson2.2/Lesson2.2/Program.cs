@@ -13,6 +13,8 @@ namespace Lesson2._2
         private const int WindowHeight = 1024;
         private float _speedX = 0.01f;
         private float _speedY = 0.02f;
+        private float _scale = 0.001f;
+        private bool minOffser = false;
 
         public Game() : base(WindowWidth, WindowHeight, GraphicsMode.Default, "Open TK sample")
         {
@@ -52,21 +54,40 @@ namespace Lesson2._2
             var modelview = Matrix4.LookAt(Vector3.Zero, Vector3.UnitZ, Vector3.UnitY);
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref modelview);
+            Scale();
+            Translate();
+
             _polygon.Draw();
             _polygon.Rotate(Math.PI / 180);
-            //_polygon.Scale(0.001f);
-            Translate();
+
+            GL.Scale(new Vector3(1,1,1));
             SwapBuffers();
+        }
+
+        public void Scale()
+        {
+            _polygon.Scale(_scale);
+
+            if (Math.Abs(_polygon._scale - 0.1) < 0.1)
+            {
+                _scale *= -1;
+            }
+
+            if (Math.Abs(_polygon._scale - 1) < 0.1)
+            {
+                _scale *= -1;
+            }
         }
 
         private void Translate()
         {
             _polygon.Translate(_speedX, _speedY);
+            //_polygon.Scale(_scale);
             float bounders = 2;
             float posX = _polygon._posX;
             float posY = _polygon._posY;
             float radius = _polygon._scale;
-            if (Math.Abs(posX - bounders + radius) < 0.1 || Math.Abs(posX + bounders - radius) < 0.1)
+            if (Math.Abs(posX - bounders + radius) < 0.2 || Math.Abs(posX - (-bounders + radius)) < 0.2)
             {
                 _speedX *= -1;
             }

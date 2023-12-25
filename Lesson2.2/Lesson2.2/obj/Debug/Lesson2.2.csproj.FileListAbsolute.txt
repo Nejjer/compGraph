@@ -25,3 +25,16 @@ F:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.CoreCompil
 F:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.CopyComplete
 F:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.exe
 F:\Education\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.pdb
+D:\edu\compGraph\Lesson2.2\Lesson2.2\bin\Debug\Lesson2._2.exe.config
+D:\edu\compGraph\Lesson2.2\Lesson2.2\bin\Debug\Lesson2._2.exe
+D:\edu\compGraph\Lesson2.2\Lesson2.2\bin\Debug\Lesson2._2.pdb
+D:\edu\compGraph\Lesson2.2\Lesson2.2\bin\Debug\OpenTK.Compatibility.dll
+D:\edu\compGraph\Lesson2.2\Lesson2.2\bin\Debug\OpenTK.dll
+D:\edu\compGraph\Lesson2.2\Lesson2.2\bin\Debug\OpenTK.GLControl.dll
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.AssemblyReference.cache
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.Properties.Resources.resources
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.GenerateResource.cache
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.CoreCompileInputs.cache
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2.2.csproj.CopyComplete
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.exe
+D:\edu\compGraph\Lesson2.2\Lesson2.2\obj\Debug\Lesson2._2.pdb
