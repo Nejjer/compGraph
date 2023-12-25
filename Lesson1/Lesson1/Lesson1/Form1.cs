@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 using Lesson1.Shapes;
 
@@ -18,6 +20,7 @@ namespace Lesson1
             _ellipse = new Ellipse(gr, BackColor);
             _polygon = new Polygon(gr, BackColor);
         }
+
 
         //Линия
         private void LineDrawBtn_Click(object sender, EventArgs e)
@@ -109,6 +112,28 @@ namespace Lesson1
         private void CountOfAngle_ValueChanged(object sender, EventArgs e)
         {
             _polygon.countOfAngle = (int)CountOfAngle.Value;
+        }
+
+        /** Нарисовать многоугольник*/
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var pointsString = textBox1.Text.Split(' ');
+            var points = new List<Point>();
+            foreach (var pointStr in pointsString)
+            {
+                var values = pointStr.Split(';');
+                points.Add(new Point(int.Parse(values[0]), int.Parse(values[1])));
+            }
+
+            _polygon.DrawByPoints(points.ToArray());
+        }
+
+        /**
+         * Стереть многоугольник
+         */
+        private void button1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

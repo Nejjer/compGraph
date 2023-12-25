@@ -28,6 +28,12 @@ namespace Lesson1.Shapes
             _gr.DrawPolygon(new Pen(Color.Aqua), GetPoints());
         }
 
+        public void DrawByPoints(Point[] points)
+        {
+            _gr.FillPolygon(_brush, points);
+            _gr.DrawPolygon(new Pen(Color.Aqua), points);
+        }
+
         public void Clear()
         {
             _gr.FillPolygon(_backgroundBrush, GetPoints());

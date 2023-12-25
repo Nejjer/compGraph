@@ -31,7 +31,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.LineDrawBtn = new System.Windows.Forms.Button();
-            this.LineClearBtn = new System.Windows.Forms.Button();
             this.LineEndX = new System.Windows.Forms.NumericUpDown();
             this.LineStartX = new System.Windows.Forms.NumericUpDown();
             this.LineStartY = new System.Windows.Forms.NumericUpDown();
@@ -49,7 +48,6 @@
             this.EliipsePosY = new System.Windows.Forms.NumericUpDown();
             this.EllipsePosX = new System.Windows.Forms.NumericUpDown();
             this.EllipseWidth = new System.Windows.Forms.NumericUpDown();
-            this.EliipseClearBtn = new System.Windows.Forms.Button();
             this.EllipseDrawBtn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.CountOfAngle = new System.Windows.Forms.NumericUpDown();
@@ -60,9 +58,12 @@
             this.PolygonPosY = new System.Windows.Forms.NumericUpDown();
             this.PolygonPosX = new System.Windows.Forms.NumericUpDown();
             this.PolygonRadius = new System.Windows.Forms.NumericUpDown();
-            this.PolyhonClearBtn = new System.Windows.Forms.Button();
             this.PolygonDrawBtn = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.LineEndX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineStartX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LineStartY)).BeginInit();
@@ -95,16 +96,6 @@
             this.LineDrawBtn.Text = "Нарисовать";
             this.LineDrawBtn.UseVisualStyleBackColor = true;
             this.LineDrawBtn.Click += new System.EventHandler(this.LineDrawBtn_Click);
-            // 
-            // LineClearBtn
-            // 
-            this.LineClearBtn.Location = new System.Drawing.Point(12, 93);
-            this.LineClearBtn.Name = "LineClearBtn";
-            this.LineClearBtn.Size = new System.Drawing.Size(96, 26);
-            this.LineClearBtn.TabIndex = 2;
-            this.LineClearBtn.Text = "Стереть";
-            this.LineClearBtn.UseVisualStyleBackColor = true;
-            this.LineClearBtn.Click += new System.EventHandler(this.LineClearBtn_Click);
             // 
             // LineEndX
             // 
@@ -250,16 +241,6 @@
             this.EllipseWidth.TabIndex = 20;
             this.EllipseWidth.ValueChanged += new System.EventHandler(this.EllipseWidth_ValueChanged);
             // 
-            // EliipseClearBtn
-            // 
-            this.EliipseClearBtn.Location = new System.Drawing.Point(12, 215);
-            this.EliipseClearBtn.Name = "EliipseClearBtn";
-            this.EliipseClearBtn.Size = new System.Drawing.Size(96, 26);
-            this.EliipseClearBtn.TabIndex = 19;
-            this.EliipseClearBtn.Text = "Стереть";
-            this.EliipseClearBtn.UseVisualStyleBackColor = true;
-            this.EliipseClearBtn.Click += new System.EventHandler(this.EliipseClearBtn_Click);
-            // 
             // EllipseDrawBtn
             // 
             this.EllipseDrawBtn.Location = new System.Drawing.Point(12, 183);
@@ -347,16 +328,6 @@
             this.PolygonRadius.TabIndex = 31;
             this.PolygonRadius.ValueChanged += new System.EventHandler(this.PolygonRadius_ValueChanged);
             // 
-            // PolyhonClearBtn
-            // 
-            this.PolyhonClearBtn.Location = new System.Drawing.Point(12, 355);
-            this.PolyhonClearBtn.Name = "PolyhonClearBtn";
-            this.PolyhonClearBtn.Size = new System.Drawing.Size(96, 26);
-            this.PolyhonClearBtn.TabIndex = 30;
-            this.PolyhonClearBtn.Text = "Стереть";
-            this.PolyhonClearBtn.UseVisualStyleBackColor = true;
-            this.PolyhonClearBtn.Click += new System.EventHandler(this.PolyhonClearBtn_Click);
-            // 
             // PolygonDrawBtn
             // 
             this.PolygonDrawBtn.Location = new System.Drawing.Point(12, 323);
@@ -374,13 +345,51 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(148, 26);
             this.label15.TabIndex = 28;
-            this.label15.Text = "Многоугольник";
+            this.label15.Text = "Правильный Многоугольник";
+            // 
+            // label16
+            // 
+            this.label16.Location = new System.Drawing.Point(122, 443);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(115, 12);
+            this.label16.TabIndex = 48;
+            this.label16.Text = "Вершины";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 438);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 26);
+            this.button2.TabIndex = 40;
+            this.button2.Text = "Нарисовать";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label20.Location = new System.Drawing.Point(0, 409);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(148, 26);
+            this.label20.TabIndex = 39;
+            this.label20.Text = "Многоугольник";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(125, 461);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(233, 20);
+            this.textBox1.TabIndex = 49;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 615);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.CountOfAngle);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -389,7 +398,6 @@
             this.Controls.Add(this.PolygonPosY);
             this.Controls.Add(this.PolygonPosX);
             this.Controls.Add(this.PolygonRadius);
-            this.Controls.Add(this.PolyhonClearBtn);
             this.Controls.Add(this.PolygonDrawBtn);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.EllipseHeight);
@@ -400,7 +408,6 @@
             this.Controls.Add(this.EliipsePosY);
             this.Controls.Add(this.EllipsePosX);
             this.Controls.Add(this.EllipseWidth);
-            this.Controls.Add(this.EliipseClearBtn);
             this.Controls.Add(this.EllipseDrawBtn);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.LineEndY);
@@ -412,7 +419,6 @@
             this.Controls.Add(this.LineStartY);
             this.Controls.Add(this.LineStartX);
             this.Controls.Add(this.LineEndX);
-            this.Controls.Add(this.LineClearBtn);
             this.Controls.Add(this.LineDrawBtn);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -430,7 +436,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.PolygonPosX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PolygonRadius)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox1;
 
         private System.Windows.Forms.NumericUpDown CountOfAngle;
         private System.Windows.Forms.Label label11;
@@ -440,7 +452,6 @@
         private System.Windows.Forms.NumericUpDown PolygonPosY;
         private System.Windows.Forms.NumericUpDown PolygonPosX;
         private System.Windows.Forms.NumericUpDown PolygonRadius;
-        private System.Windows.Forms.Button PolyhonClearBtn;
         private System.Windows.Forms.Button PolygonDrawBtn;
         private System.Windows.Forms.Label label15;
 
@@ -452,7 +463,6 @@
         private System.Windows.Forms.NumericUpDown EliipsePosY;
         private System.Windows.Forms.NumericUpDown EllipsePosX;
         private System.Windows.Forms.NumericUpDown EllipseWidth;
-        private System.Windows.Forms.Button EliipseClearBtn;
         private System.Windows.Forms.Button EllipseDrawBtn;
         private System.Windows.Forms.Label label10;
 
@@ -471,7 +481,6 @@
         private System.Windows.Forms.NumericUpDown LineStartY;
 
         private System.Windows.Forms.Button LineDrawBtn;
-        private System.Windows.Forms.Button LineClearBtn;
 
         private System.Windows.Forms.Label label1;
 
